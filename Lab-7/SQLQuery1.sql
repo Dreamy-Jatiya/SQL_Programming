@@ -75,7 +75,7 @@ WHERE FIRSTNAME LIKE 'H%%I' AND CITY LIKE '%RA%'
 --19. Display employees detail whose FIRSTNAME contains ‘A’, CITY ends with ‘D’, and DEPARTMENT is NOT 
 --NULL. 
 SELECT *FROM EMPLOYEE
-WHERE FIRSTNAME LIKE 'A%'AND CITY LIKE '%D' AND DEPARTMENT LIKE '%'
+WHERE FIRSTNAME LIKE '%A%'AND CITY LIKE '%D' AND DEPARTMENT LIKE '%'
 
 --20. Display employees whose second and third characters of FIRSTNAME are vowels and CITY starts with ‘R’. 
 SELECT *FROM EMPLOYEE
