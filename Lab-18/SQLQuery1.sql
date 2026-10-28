@@ -1,5 +1,3 @@
-USE CSE_3A_128
-
 SELECT * FROM STUDENT
 
 --1. Display the details of students whose SPI is greater than the average SPI.

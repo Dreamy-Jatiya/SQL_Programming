@@ -30,8 +30,8 @@ WHERE CITY='RAJKOT'OR CITY='SURAT'
 SELECT *FROM STUDENT
 WHERE SPI>8.0 AND STDID<105
 
---10. Find all students whose SPI is greater than or equal to 7.0 and less than or equal to 9.0 (USE AND & 
---BETWEEN). 
+--10. Find all students whose SPI is greater than or equal to 7.0 and less than or equal to 9.0  
+--(USE AND & BETWEEN). 
 SELECT *FROM STUDENT
 WHERE SPI>=7.0 AND SPI<=9.0
 
@@ -91,7 +91,7 @@ WHERE BRANCH!='COMPUTER'
 
 --22. Select all details with student IDs not in the range 105 to 109. 
 SELECT *FROM STUDENT
-WHERE STDID BETWEEN 105 AND 109
+WHERE STDID NOT  BETWEEN 105 AND 109
 
 --23. Select all records from STUDENT where SPI is greater than 7.0 and less than or equal to 9.0, and student 
 --ID is between 102 and 108. 
