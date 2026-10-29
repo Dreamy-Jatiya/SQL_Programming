@@ -16,7 +16,7 @@ SELECT FLOOR(25.2) ,FLOOR(25.7) ,FLOOR(-25.2)
 SELECT (5%2) ,(5%3)
 
 --6. Find out value of 3 raised to 2nd power and 4 raised 3rd power. 
-SELECT POWER(3,2) , POWER(2,4)
+SELECT POWER(3,2) , POWER(4,3)
 
 --7. Find out the square root of 25, 30 and 50.
 SELECT SQRT(25) ,SQRT(30) ,SQRT(50)
@@ -126,7 +126,7 @@ SELECT CONCAT_WS('-',FIRSTNAME,LASTNAME) FROM EMPLOYEE
 SELECT SUBSTRING(FIRSTNAME,2,LEN(FIRSTNAME)-2) FROM EMPLOYEE
 
 --25. Display FIRSTNAME after replacing vowels with '*'. 
-SELECT REPLACE(FIRSTNAME,[AEIOU],'*') FROM EMPLOYEE
+SELECT REPLACE(FIRSTNAME,'AEIOU','*****') FROM EMPLOYEE
 
 --26. Display employees where combined length of FIRSTNAME and LASTNAME is greater than 10.
 SELECT *FROM EMPLOYEE

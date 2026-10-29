@@ -96,14 +96,22 @@ WHERE P.CITY = 'AHMEDABAD'
 
 --15. Produce Output Like: <PersonName> lives in <City> and works in <DepartmentName> Department. (In 
 --single column) 
-SELECT CONCAT(P.PERSONNAME,' LIVES IN ',P.CITY,' AND WORKS IN ',ISNULL(D.DEPARTMENTNAME,'NONE') )
-FROM DEPARTMENT D LEFT JOIN PERSON P
-ON D.DEPARTMENTID = P.DEPARTMENTID
+SELECT CONCAT(
+    P.PERSONNAME, ' lives in ', P.CITY,
+    ' and works in ', ISNULL(D.DEPARTMENTNAME, 'NONE'),
+    ' Department.'
+)
+FROM PERSON P
+LEFT JOIN DEPARTMENT D
+ON P.DEPARTMENTID = D.DEPARTMENTID;
 
 --Part – B: 
 --16. Produce Output Like: <PersonName> earns <Salary> from <DepartmentName> department monthly. (In 
 --single column) 
-SELECT CONCAT(P.PERSONNAME,' EARNS ',P.SALARY,' FROM ',D.DEPARTMENTNAME)
+SELECT CONCAT(
+    P.PERSONNAME,' EARNS ',P.SALARY,
+    ' FROM ',D.DEPARTMENTNAME
+    )
 FROM DEPARTMENT D INNER JOIN PERSON P
 ON D.DEPARTMENTID = P.DEPARTMENTID
 
